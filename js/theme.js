@@ -6,7 +6,7 @@ const themeBtn = document.getElementById("theme-btn")
 function loadTheme(){
     if (JSON.parse(darkmode)){
         setTheme(1)
-    } else {themeBtn.textContent = `brightness_7`}
+    } else {setTheme(0)}
 }
 
 
@@ -16,9 +16,9 @@ function setTheme(theme) {
     if (theme === 0) {
 
         root.style.setProperty('--primary-color', 'rgba(248, 248, 248, 0.836)');
+        root.style.setProperty('--secondary-color', '#b6b7d5');
         root.style.setProperty('--text-color', '#000');
         root.style.setProperty('--darkmode-toggle', 'rgb(255, 166, 0)');
-        root.style.setProperty('--secondary-color', '#b6b7d5');
         root.style.setProperty('--accent-color', '#4E9F3D'); 
         root.style.setProperty('--secondary-accent-color', '#03A9F4');
         
