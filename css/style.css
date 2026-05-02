@@ -11,15 +11,16 @@
 * { 
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
-     box-sizing: border-box; 
+    box-sizing: border-box;
+    outline: 1px solid var(--text-color); 
 }
 html,
 body{
     height: 100%;
-    width: 100%;
+    width: 97%;
 }
 body{
-    margin: 0;
+    margin: 0 1em;
     font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
     background: var(--secondary-color);
@@ -31,42 +32,60 @@ body{
     flex-direction: column;
 }
 
+.main-title-text{
+    font-size: 2rem;
+    margin: 0;
+    
+   width: 70%;
 
+}
 /* Theme Buttons */ 
-button {
-  font-size: 1.4em;
-  padding: 0.6em 0.8em;
-  border-radius: 0.5em;
-  border: none;
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  cursor: pointer;
-  box-shadow: 2px 2px 3px #000000b4;
-}
+/* From Uiverse.io by zanina-yassine */ 
 
+/* The switch - the box around the slider */
 .container {
-  display: flex;
-  padding: 3px;
-  background: linear-gradient(90deg, #03a9f4, #f441a5);
-  border-radius: 0.9em;
-  transition: all 0.4s ease;
+  width: 51px;
+  height: 31px;
+  position: relative;
 }
 
-.container::before {
-  content: "";
-  display: flex;
-  inset: 0;
-  margin: auto;
-  border-radius: 0.9em;
-  z-index: -10;
-  filter: blur(0);
-  transition: filter 0.4s ease;
+/* Hide default HTML style */
+#theme-btn {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
 }
 
-.container:hover::before {
-  background: linear-gradient(90deg, #03a9f4, #f441a5);
-  filter: blur(1.2em);
+.switch {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #e9e9eb;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
 }
-.container:active::before {
-  filter: blur(0.2em);
+
+/* The slider */
+.slider {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  left: calc(50% - 27px/2 - 10px);
+  top: calc(50% - 27px/2);
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+#theme-btn:checked + .switch {
+  background-color: #34C759;
+}
+
+#theme-btn:checked + .switch .slider {
+  left: calc(50% - 27px/2 + 10px);
+  top: calc(50% - 27px/2);
 }

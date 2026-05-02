@@ -23,8 +23,9 @@ function setTheme(theme) {
         root.style.setProperty('--secondary-accent-color', '#03A9F4');
         
         localStorage.setItem("darkmode", "0")
-
-        themeBtn.textContent = `✨ Lights on! ✨`
+        themeBtn.removeAttribute("checked")   
+        themeBtn.setAttribute("unchecked", "0")
+        // themeBtn.textContent = `✨ Lights on! ✨`
     } else if (theme === 1) {
 
         root.style.setProperty('--primary-color', 'rgba(37, 37, 37, 0.934)');
@@ -35,8 +36,9 @@ function setTheme(theme) {
         root.style.setProperty('--secondary-accent-color', '#303F9F'); 
         
         localStorage.setItem("darkmode", "1")
-
-        themeBtn.textContent = `🌙 Lights off! 🌙`
+        themeBtn.removeAttribute("unchecked")   
+        themeBtn.setAttribute("checked", "1")
+        // themeBtn.textContent = `🌙 Lights off! 🌙`
     }
 }
 themeBtn.addEventListener("click", function(){
