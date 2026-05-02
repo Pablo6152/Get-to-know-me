@@ -31,8 +31,8 @@ function setTheme(theme) {
     let root = document.documentElement;
     if (theme === 0) {
 
-        root.style.setProperty('--primary-color', 'rgba(248, 248, 248, 0.836)');
-        root.style.setProperty('--secondary-color', '#b6b7d5');
+        root.style.setProperty('--primary-color', 'rgb(255, 255, 255)');
+        root.style.setProperty('--secondary-color', 'rgba(235, 235, 239)');
         root.style.setProperty('--text-color', '#000');
         root.style.setProperty('--darkmode-toggle', 'rgb(255, 166, 0)');
         root.style.setProperty('--accent-color', '#4E9F3D'); 
