@@ -32,7 +32,7 @@ function setTheme(theme) {
     if (theme === 0) {
 
         root.style.setProperty('--primary-color', 'rgb(255, 255, 255)');
-        root.style.setProperty('--secondary-color', 'rgba(235, 235, 239)');
+        root.style.setProperty('--secondary-color', 'rgb(228, 227, 227)');
         root.style.setProperty('--text-color', '#000');
         root.style.setProperty('--darkmode-toggle', 'rgb(255, 166, 0)');
         root.style.setProperty('--accent-color', '#4E9F3D'); 
