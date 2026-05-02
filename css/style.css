@@ -12,7 +12,7 @@
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
     box-sizing: border-box;
-    outline: 1px solid var(--text-color); 
+    /* outline: 1px solid var(--text-color); */
 }
 html,
 body{
@@ -24,10 +24,10 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
     background: var(--secondary-color);
-    line-height: 1.6;
+    line-height: 1.4;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
@@ -35,9 +35,8 @@ body{
 .main-title-text{
     font-size: 2rem;
     margin: 0;
-    
-   width: 70%;
-
+    text-align: center;
+    width: 90%;
 }
 /* Theme Buttons */ 
 /* From Uiverse.io by zanina-yassine */ 

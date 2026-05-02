@@ -1,5 +1,6 @@
 let darkmode = localStorage.getItem("darkmode")
 const themeBtn = document.getElementById("theme-btn")
+const mainTitleText = document.getElementById("main-title-text")
 
 
 // When page loads
@@ -25,7 +26,7 @@ function setTheme(theme) {
         localStorage.setItem("darkmode", "0")
         themeBtn.removeAttribute("checked")   
         themeBtn.setAttribute("unchecked", "0")
-        // themeBtn.textContent = `✨ Lights on! ✨`
+        
     } else if (theme === 1) {
 
         root.style.setProperty('--primary-color', 'rgba(37, 37, 37, 0.934)');
@@ -38,15 +39,16 @@ function setTheme(theme) {
         localStorage.setItem("darkmode", "1")
         themeBtn.removeAttribute("unchecked")   
         themeBtn.setAttribute("checked", "1")
-        // themeBtn.textContent = `🌙 Lights off! 🌙`
     }
 }
 themeBtn.addEventListener("click", function(){
     darkmode = localStorage.getItem("darkmode")
     if (JSON.parse(darkmode) !== 1){
         setTheme(1)
+        mainTitleText.textContent = `Apagaste las luces! 🌙`
     } else if (JSON.parse(darkmode) !== 0){
         setTheme(0)
+        mainTitleText.textContent = `Encendiste las luces! ✨`
     }
 })
 
