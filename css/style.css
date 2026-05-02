@@ -1,11 +1,11 @@
 :root{
-    --primary-color: rgba(248, 248, 248, 0.836);
-    --secondary-color: #b6b7d5;
-    --text-color: #000;
-    --darkmode-toggle: rgb(255, 166, 0);
-    --primary-accent-color: #4E9F3D;
+    --primary-color: rgba(37, 37, 37, 0.934);
+    --secondary-color: #121212;
+    --text-color: #fff;
+    --darkmode-toggle: #fff;
+    --primary-accent-color: #5fc44b;
     --secondary-accent-color: #303F9F;
-    --tertiary-accent-color: #D32F2F;
+    /*--tertiary-accent-color: #D32F2F;*/
 }
 /* General */
 * { 
