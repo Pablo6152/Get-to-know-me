@@ -28,7 +28,7 @@ function setTheme(theme) {
     } else if (theme === 1) {
 
         root.style.setProperty('--primary-color', 'rgba(37, 37, 37, 0.934)');
-        root.style.setProperty('--secondary-color', '#121212');
+        root.style.setProperty('--secondary-color', '#000000');
         root.style.setProperty('--text-color', '#fff');
         root.style.setProperty('--darkmode-toggle', '#fff');
         root.style.setProperty('--primary-accent-color', '#5fc44b'); 
