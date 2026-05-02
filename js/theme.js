@@ -1,15 +1,30 @@
 let darkmode = localStorage.getItem("darkmode")
+let userMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+let autoThemePreference = 0
 const themeBtn = document.getElementById("theme-btn")
 const mainTitleText = document.getElementById("main-title-text")
 
-
+console.log(userMode)
 // When page loads
 function loadTheme(){
-    if (JSON.parse(darkmode)){
-        setTheme(1)
-    } else {setTheme(0)}
+    
+    if (autoThemePreference === 1){
+        autoTheme()
+    } else {
+
+    darkmode = localStorage.getItem("darkmode")
+    setTheme(JSON.parse(darkmode))
+}
 }
 
+function autoTheme(){
+
+    if (userMode == true){
+        localStorage.setItem("darkmode", "1")
+    } else if (userMode === false){
+        localStorage.setItem("darkmode", "0")
+    }
+}
 
 // Dark mode
 function setTheme(theme) {
