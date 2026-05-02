@@ -32,17 +32,28 @@ body{
     flex-direction: column;
 }
 
+.main-title-box{
+    background-color: var(--primary-color);
+
+    border-radius: 2pc;
+    padding: 1em 0;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main-title-text{
     font-size: 2rem;
     margin: 0;
     text-align: center;
-    width: 90%;
+    
 }
 /* Theme Buttons */ 
 /* From Uiverse.io by zanina-yassine */ 
 
 /* The switch - the box around the slider */
-.container {
+.theme-button-container {
   width: 51px;
   height: 31px;
   position: relative;
