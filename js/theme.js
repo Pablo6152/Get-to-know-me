@@ -24,7 +24,7 @@ function setTheme(theme) {
         
         localStorage.setItem("darkmode", "0")
 
-        themeBtn.textContent = `Lights on! ✨`
+        themeBtn.textContent = `✨ Lights on! ✨`
     } else if (theme === 1) {
 
         root.style.setProperty('--primary-color', 'rgba(37, 37, 37, 0.934)');
@@ -36,7 +36,7 @@ function setTheme(theme) {
         
         localStorage.setItem("darkmode", "1")
 
-        themeBtn.textContent = `Lights off! 🪐🌙`
+        themeBtn.textContent = `🌙 Lights off! 🌙`
     }
 }
 themeBtn.addEventListener("click", function(){
