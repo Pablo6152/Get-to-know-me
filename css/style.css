@@ -9,30 +9,39 @@
 }
 /* General */
 * { 
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-    box-sizing: border-box;
-    /* outline: 1px solid var(--text-color); */
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+  /* outline: 1px solid var(--text-color); */
 }
-html,
-body{
-    height: 100%;
-    width: 97%;
 
-    display: flex;
+.hidden{
+  display: none;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+
+}
+
+
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
 
 }
 body{
-    margin: 0 1em;
-    font-family: 'Montserrat', sans-serif;
-    color: var(--text-color);
-    background: var(--secondary-color);
-    line-height: 1.4;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text-color);
+  background: var(--secondary-color);
+  line-height: 1.4;
+  display: flex;
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 
 .shadow{
@@ -65,7 +74,7 @@ body{
 
   margin-top: 1em;
   margin-bottom: 1em;
-  width: 100%;
+  width: 90%;
   height: 7%;
   display: flex;
   justify-content: space-between;
@@ -135,11 +144,11 @@ body{
 
 
 .app-container{
-    width: 100%;
+    width: 80%;
     height: 93%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
 }
 
