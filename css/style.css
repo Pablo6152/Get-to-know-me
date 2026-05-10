@@ -12,7 +12,7 @@
   -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
   box-sizing: border-box;
-  /* outline: 1px solid var(--text-color); */
+  outline: 1px solid var(--text-color);
 }
 
 .hidden{
@@ -22,9 +22,7 @@
 html{
   height: 100%;
   width: 100%;
-
 }
-
 
 body{
   height: 100%;
