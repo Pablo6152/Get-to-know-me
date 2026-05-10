@@ -60,10 +60,10 @@ themeBtn.addEventListener("click", function(){
     darkmode = localStorage.getItem("darkmode")
     if (JSON.parse(darkmode) !== 1){
         setTheme(1)
-        mainTitleText.textContent = `Apagaste las luces! 🌙`
+        // mainTitleText.textContent = `Apagaste las luces! 🌙`
     } else if (JSON.parse(darkmode) !== 0){
         setTheme(0)
-        mainTitleText.textContent = `Encendiste las luces! ✨`
+        // mainTitleText.textContent = `Encendiste las luces! ✨`
     }
 })
 
