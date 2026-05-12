@@ -180,6 +180,10 @@ p, h1, h2, h3, h4, h5, h6{
     /* border-bottom: 1px solid gray; */
 }
 
+.item-title{
+    font-size: 1rem;
+}
+
 .item-description{
   
   margin-top: 1em;
