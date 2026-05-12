@@ -1,4 +1,7 @@
 import {loadTheme} from "./theme.js"
+import {appContainer} from "./containers.js"
+import {app} from "./pages/app.js"
+
 
 // In your main.js or inline in HTML
 if ('serviceWorker' in navigator) {
@@ -13,4 +16,16 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+
+
+function loadApp() {
+    console.log("Loading app...")
+    appContainer.innerHTML = app
+    
+
+}
+
+
+
 loadTheme()
+loadApp()
