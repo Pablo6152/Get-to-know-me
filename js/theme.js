@@ -4,7 +4,7 @@ let autoThemePreference = 0
 const themeBtn = document.getElementById("theme-btn")
 const mainTitleText = document.getElementById("main-title-text")
 
-console.log(userMode)
+
 // When page loads
 function loadTheme(){
     
